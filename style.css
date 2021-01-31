@@ -1,0 +1,62 @@
+body {
+  font-family: verdana;
+  font-size: 0.7rem;
+}
+
+h1 {
+  text-align: center;
+}
+
+#lists {
+  display: flex;
+  justify-content: space-around;
+}
+
+#first,
+#second,
+#third {
+  border: 1px solid orangered;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding: 10px;
+}
+
+span {
+  display: flex;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% - 10px);
+  margin: 0.5px;
+  padding-left: 10px;
+}
+
+h2 {
+  font-size: 1rem;
+  align-self: flex-start;
+}
+
+.selected {
+  background-color: orangered;
+}
+
+#first span:nth-child(2),
+#second span:nth-child(-n + 2),
+#third span:nth-child(1) {
+  background-color: orangered;
+}
+
+#first span:nth-child(-n + 2),
+#second span:nth-child(-n + 2),
+#third span:nth-child(-n + 2) {
+  border: 0.5px solid grey;
+}
+
+#first span:nth-child(n + 3),
+#second span:nth-child(n + 3),
+#third span:nth-child(n + 3) {
+  justify-content: flex-start;
+}
