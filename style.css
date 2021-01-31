@@ -15,7 +15,7 @@ h1 {
 #first,
 #second,
 #third {
-  border: 1px solid orangered;
+  border: 1px solid #f56942;
   width: 30%;
   display: flex;
   flex-direction: column;
@@ -30,7 +30,6 @@ span {
   align-items: center;
   justify-content: center;
   width: calc(100% - 10px);
-  margin: 0.5px;
   padding-left: 10px;
 }
 
@@ -40,23 +39,26 @@ h2 {
 }
 
 .selected {
-  background-color: orangered;
-}
-
-#first span:nth-child(2),
-#second span:nth-child(-n + 2),
-#third span:nth-child(1) {
-  background-color: orangered;
+  background-color: #f56942;
 }
 
 #first span:nth-child(-n + 2),
 #second span:nth-child(-n + 2),
 #third span:nth-child(-n + 2) {
-  border: 0.5px solid grey;
+  border: 0.5px solid lightgray;
+  font-size: 0.3em;
 }
 
-#first span:nth-child(n + 3),
-#second span:nth-child(n + 3),
-#third span:nth-child(n + 3) {
+#first span:nth-child(2),
+#second span:nth-child(-n + 2),
+#third span:nth-child(1) {
+  background-color: #f56942;
+}
+
+[id='1'],
+[id='2'],
+[id='3'],
+[id='4'] {
   justify-content: flex-start;
+  margin: 0.5px;
 }
